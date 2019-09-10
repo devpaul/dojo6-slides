@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Dojo 6</title>
+
+	<meta name="description" content="Slides for Dojo 6 presentation at Phoenix TypeScript">
+	<meta name="author" content="Paul Shannon">
+
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<link rel="stylesheet" href="node_modules/reveal.js/css/reveal.css">
+	<link rel="stylesheet" href="node_modules/reveal.js/css/theme/sky.css" id="theme">
+
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="node_modules/reveal.js/lib/css/zenburn.css">
+	<link rel="stylesheet" href="resources/main.css">
+
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'node_modules/reveal.js/css/print/pdf.css' : 'node_modules/reveal.js/css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+
+<div class="reveal">
+	<div class="slides">
+		<section data-background-image="./assets/images/dojo2-bg.jpg">
+			<div class="tall center-column-flex">
+				<img src="./assets/images/dragon2.svg" class="removeFormatting">
+				<h2>Dojo 6</h2>
+			</div>
+		</section>
+
+		<section>
+			<h2>Hello!</h2>
+
+			<div class="two-column">
+				<div>
+					<h3>Paul Shannon</h3>
+					<img src="assets/images/sitepen.png" class="removeFormatting">
+				</div>
+				<div>
+					<ul>
+						<li>Sr Engineer @ SitePen</li>
+						<li>Talkscript Podcast</li>
+						<li>Phoenix TypeScript</li>
+						<li>Committer: Dojo, Intern</li>
+						<li class="github no-style"><a href="https://github.com/devpaul">devpaul</a></li>
+						<li class="twitter no-style"><a href="https://twitter.com/developerPaul">@developerPaul</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h2>The Dojo Framework</h2>
+			<p>&quot;Batteries-included&quot; reactive framework</p>
+			<aside class="notes">
+				<ul>
+					<li>Dojo toolkit was introduced in 2005</li>
+					<li>Dojo Framework was a complete rewrite: TypeScript, reactive</li>
+				</ul>
+			</aside>
+		</section>
+
+		<section>
+			<h2>Features</h2>
+
+			<ul>
+				<li>Widgets</li>
+				<li>Routing</li>
+				<li>Processes</li>
+				<li>State framework</li>
+				<li class="fragment">Polyfills</li>
+				<li class="fragment">Custom Elements</li>
+				<li class="fragment">Build time rendering</li>
+				<li class="fragment">Internationalization</li>
+				<li class="fragment">Accessibility</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Dojo's Reactive Lifecycle</h2>
+		</section>
+
+		<section>
+			<div>
+				<svg width="100%" height="100%" viewBox="0 0 842 662" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+					<g id="Artboard1" transform="matrix(1.01937,0,0,1,-238.533,-41)">
+						<rect x="234" y="41" width="826" height="662" style="fill:none;"/>
+						<g id="Arrow" transform="matrix(0.980998,0,0,1,20.1425,0)">
+							<path class="fragment fade-in" data-fragment-index="5" id="Arrow1" serif:id="Arrow" d="M380.219,381.069C383.824,293.118 431.781,212.645 508.044,167.724L523.632,194.188C456.743,233.587 414.546,304 410.962,381.069L426.955,381.069L396.477,442.024L366,381.069L380.219,381.069Z" style="fill:rgb(51,104,158);"/>
+							<path class="fragment fade-in" data-fragment-index="3" id="Arrow2" serif:id="Arrow" d="M795.477,221.914L785.53,232.58L761.736,168.719L827.102,188.001L815.72,200.206C873.752,253.42 904.559,330.047 899.453,408.614C898.723,419.833 897.266,430.993 895.091,442.024L865.952,436.285C867.879,426.513 869.169,416.627 869.816,406.688C874.344,337.013 846.991,269.062 795.477,221.914Z" style="fill:rgb(51,104,158);"/>
+							<path class="fragment fade-in" data-fragment-index="1" id="Arrow3" serif:id="Arrow" d="M774.05,614.529C688.241,666.164 580.37,663.932 496.754,608.731C488.788,603.472 481.118,597.778 473.778,591.675L491.192,570.73C497.763,576.193 504.63,581.29 511.761,585.998C586.523,635.355 682.945,637.409 759.717,591.363L750.758,576.883L818.63,570.73L782.829,628.719L774.05,614.529Z" style="fill:rgb(51,104,158);"/>
+						</g>
+						<g id="Titles" transform="matrix(0.980998,0,0,1,20.1425,0)">
+							<g class="fragment fade-in" data-fragment-index="2" transform="matrix(1,0,0,1,-167.491,-44.9237)">
+								<text x="900px" y="577px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:85.159px;">Process</text>
+							</g>
+							<g transform="matrix(1,0,0,1,-40.4254,154.076)">
+								<text x="294px" y="378px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:85.159px;">Widgets</text>
+							</g>
+							<g class="fragment fade-in" data-fragment-index="4" transform="matrix(1,0,0,1,31.0838,36.9605)">
+								<text x="507px" y="128px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:85.159px;">State</text>
+							</g>
+						</g>
+					</g>
+				</svg>
+			</div>
+
+			<aside class="notes">
+				<ul>
+					<li>Widgets: written in JSX or hyperscript, render the view</li>
+					<li>Process: operates the business logic of the application; mutates the store</li>
+					<li>State: Globally held by the store</li>
+				</ul>
+			</aside>
+		</section>
+
+		<section>
+			<h1>Widgets</h1>
+		</section>
+
+		<section>
+			<h2>Classic Widgets</h2>
+
+			<pre><code class="jsx" data-trim>
+				import { tsx } from '@dojo/framework/core/vdom';
+				import WidgetBase from '@dojo/framework/core/WidgetBase';
+				import Hello from './widgets/Hello';
+
+				class App extends WidgetBase {
+					protected renderer() {
+						return (
+							<div>
+								<Hello name="Dojo CodeSandbox"></Hello>
+								<h2>{'Start editing to see some magic happen \u2728'}</h2>
+							</div>
+						);
+					}
+				}
+			</code></pre>
+
+			<aside class="notes">
+
+			</aside>
+		</section>
+
+		<section>
+			<div>
+				<h2 class="iconed-title">Functional Widgets
+					<img class="new-title-icon removeFormatting" src="./assets/images/new-badge-svgrepo-com.svg">
+				</h2>
+
+			</div>
+
+			<pre><code data-trim>
+				import { create, tsx } from '@dojo/framework/core/vdom';
+				import Hello from './widgets/Hello';
+
+				const factory = create();
+
+				const App = factory(function App() {
+					return (
+						<div>
+							<Hello name="Dojo CodeSandbox"></Hello>
+							<h2>{'Start editing to see some magic happen \u2728'}</h2>
+						</div>
+					);
+				});
+			</code></pre>
+
+			<aside class="notes">
+				New Dojo 6 feature
+			</aside>
+		</section>
+
+		<section>
+			<div class="two-column">
+				<div>
+					<h4>Classic Dojo</h4>
+
+					<ul>
+						<li>Classes</li>
+						<li>Providers</li>
+						<li>Decorators</li>
+						<li>Metas</li>
+						<li>Containers</li>
+						<li>Local state</li>
+					</ul>
+				</div>
+				<div style="display: flex; justify-content: center; align-items: center">
+					<h2>VS</h2>
+				</div>
+				<div>
+					<h4>Functional Dojo</h4>
+
+					<ul>
+						<li>Render functions</li>
+						<li>Middleware</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<h2>Demo</h2>
+
+			<a href="https://github.com/devpaul/catsvsdogs/"><img class="removeFormatting" src="./assets/images/GitHub-Mark/PNG/GitHub-Mark-32px.png"> devpaul/catsvsdogs</a>
+
+			<aside class="notes">
+				<ul>
+					<li>routing</li>
+					<li>functional widgets</li>
+					<li>classical widgets</li>
+					<li>middleware</li>
+				</ul>
+			</aside>
+		</section>
+
+		<section>
+			<h1>State</h1>
+		</section>
+
+		<section>
+			<h2>Dojo Store</h2>
+
+			<p>State is managed globally by a store</p>
+
+			<aside class="notes">
+				<ul>
+					<li>State is defined by an interface. Type-safety is maintained.</li>
+					<li><a href="https://github.com/devpaul/catsvsdogs/blob/master/client/src/interfaces.d.ts">interface.ts</a></li>
+					<li><a href="https://github.com/devpaul/catsvsdogs/blob/master/client/src/middleware/store.ts">Store middleware</a></li>
+				</ul>
+			</aside>
+		</section>
+
+		<section>
+			<h1>Processes</h1>
+		</section>
+
+		<section>
+			<p>Business logic is defined by <i>processes</i> and <i>commands</i></p>
+			<p>They are tasked with manipulating the store</p>
+
+			<aside class="notes">
+				<ul>
+					<li><a href="https://github.com/devpaul/catsvsdogs/blob/master/client/src/processes/character.ts">processes</a></li>
+				</ul>
+			</aside>
+		</section>
+
+		<section>
+			<h1 class="iconed-title">
+				Dojo 6 features
+				<img class="new-title-icon removeFormatting" src="./assets/images/new-badge-svgrepo-com.svg">
+			</h1>
+		</section>
+
+		<section>
+			<h2>Build Time Rendering</h2>
+
+			<p>Dojo can pre-render routes into HTML at build time</p>
+			<p>and serve that HTML to the user before any HTML is loaded</p>
+		</section>
+
+		<section>
+			<h2>Demo</h2>
+
+			<a href="https://github.com/dojo/dojo.io/"><img class="removeFormatting" src="./assets/images/GitHub-Mark/PNG/GitHub-Mark-32px.png"> dojo/dojo.io</a>
+		</section>
+
+		<section>
+			<h2>Zero configuration</h2>
+			<h2>custom elements</h2>
+
+			<a href="https://github.com/dojo/widgets/"><img class="removeFormatting" src="./assets/images/GitHub-Mark/PNG/GitHub-Mark-32px.png"> dojo/widgets</a>
+		</section>
+
+		<section>
+			<h2>Improved Developer Experience</h2>
+			<ul>
+				<li>Faster development builds</li>
+				<li>Glob support for code splitting</li>
+				<li>TypeScript 3.4+</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Resources</h2>
+			<ul>
+				<li><a href="https://codesandbox.io/">Code Sandbox</a></li>
+				<li><a href="https://learn-dojo.com">learn-dojo.com</a></li>
+				<li><a href="https://marketplace.visualstudio.com/items?itemName=Dojo.vscode-dojo-snippets">VSCode Dojo snippets</a></li>
+				<li><a href="https://dojo.io/roadmap">Roadmap</a></li>
+				<li><a href="https://dojo.io/blog">Dojo 6 release announcement</a></li>
+			</ul>
+		</section>
+	</div>
+</div>
+
+<script src="node_modules/reveal.js/lib/js/head.min.js"></script>
+<script src="node_modules/reveal.js/js/reveal.js"></script>
+<script src="src/index.js"></script>
+
+</body>
+</html>
