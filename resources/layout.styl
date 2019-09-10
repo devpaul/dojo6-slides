@@ -1,0 +1,53 @@
+.reveal {
+	.absolute-center {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		bottom: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		align-content: center;
+		flex-direction: column;
+	}
+
+	.bottom-left {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+
+	.center-column-flex {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.tall {
+		height: 90vh;
+		max-height: 90vh;
+	}
+
+	.two-column {
+		display: flex;
+		justify-content: center;
+
+		> * {
+			flex: 1 1;
+		}
+
+		&.medium {
+			> * {
+				max-width: 500px;
+			}
+		}
+	}
+
+	.slides > section {
+		&.full {
+			height: 100%
+			width: 100%
+		}
+	}
+}
